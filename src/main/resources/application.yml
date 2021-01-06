@@ -7,3 +7,8 @@ spring:
   jpa:
     #在日志中显示SQL语句
     show-sql: true
+
+#日志控制
+logging:
+  level:
+    root: info

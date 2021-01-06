@@ -6,6 +6,7 @@ import com.beibeixyzxyz.wow_data.util.JsonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin
 @RestController
 public class CatalogController {
     @Autowired
@@ -13,6 +14,7 @@ public class CatalogController {
 
     @RequestMapping("/getOneCatalogById/{id}")
     public String getOneCatalogById(@PathVariable("id") Integer id){
+        System.out.println(catalogService.getOneById(id));
         return JsonUtil.objectToJson(catalogService.getOneById(id));
     }
 
