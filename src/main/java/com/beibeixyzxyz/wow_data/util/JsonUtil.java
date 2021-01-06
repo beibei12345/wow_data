@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.TimeZone;
 
 public class JsonUtil {
-    private static ObjectMapper OBJECT_MAPPER;
+    private static final ObjectMapper OBJECT_MAPPER;
     private static Logger logger = LoggerFactory.getLogger(JsonUtil.class);
     static {
         OBJECT_MAPPER = new ObjectMapper();
